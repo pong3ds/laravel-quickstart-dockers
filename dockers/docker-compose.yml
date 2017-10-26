@@ -3,7 +3,6 @@ version: '2'
 services:
     phpfpm:
         image: 3dsinteractive/php-fpm:7.1
-        restart: always
         volumes:
             - /var/www/laravel-quickstart-test.com:/app
             - /var/dockers/laravel-quickstart-test.com/php-fpm:/bitnami/php-fpm
