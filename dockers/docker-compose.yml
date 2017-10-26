@@ -8,8 +8,6 @@ services:
             - /var/dockers/laravel-quickstart-test.com/php-fpm:/bitnami/php-fpm
     mysqltest:
         image: 3dsinteractive/mysql:5.7
-        volumes:
-            - /var/dockers/laravel-quickstart-test.com/db-test/data:/bitnami/mysql
         environment:
             - ALLOW_EMPTY_PASSWORD=yes
             - MYSQL_USER=my_user
